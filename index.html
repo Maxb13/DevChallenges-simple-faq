@@ -1,85 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Simple FAQ | devChallenges.io</title>
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.google.com/specimen/Inter" rel="stylesheet">
 
-      body {
-        height: 100vh;
-      }
+  <title>Simple FAQ | devChallenges.io</title>
+</head>
 
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 
-    Frequently Asked Questions
-  
-    Browse through the most frequently asked questions
-  
-    How can I track my order?
-  
-    You can track your order using the following steps
-  
-    Go to the Order Tracking page.
-  
-    Enter your order number and email address.
-  
-    Click on the Track Order button to view the current status of your shipment.
-  
-    If you encounter any issues, please visit our Help Center.
-  
-    What is your return policy?
-  
-    We offer a 30-day return policy on most items. Here are some key points
-  
-    Items must be in original condition
-  
-    Unworn, unused, and unwashed.
-  
-    Include original packaging and tags
-  
-    All items should be returned with their original packaging and tags.
-  
-    Proof of purchase
-  
-    A receipt or proof of purchase is required.
-  
-    For more detailed information, read our full Return Policy.
-  
-  -->
-
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
+<body>
+  <div class="container">
+    <div class="faq-header white-bg padding-LR">
+      <h1 class="heading white-bg text-center">Frequently Asked Questions</h1>
+      <p class="body-text pt-2 white-bg text-center">Browse through the most frequently asked questions</p>
     </div>
-  </body>
+    <div class="faq-body justify-center padding-LR">
+      <h1 class="subheading">How can I track my order?</h1>
+      <p class="body-text pt-3">You can track your order using the following steps</p>
+      <p class="body-text pt-3">1. Go to the Order <a href="trackingPage.html">Tracking page.</a></p>
+      <p class="body-text pt-2">2. Enter your order number and email address.</p>
+      <p class="body-text pt-2">3. Click on the Track Order button to view the current status of your shipment.</p>
+      <p class="body-text pt-3">If you encounter any issues, please visit our <a href="helpCenter.html">Help
+          Center.</a></p>
+    </div>
+    <hr class="divider">
+    <div class="faq-body justify-center padding-LR">
+      <h1 class="subheading">What is your return policy?</h1>
+      <p class="body-text pt-3">We offer a 30-day return policy on most items. Here are some key points</p>
+      <ul class="body-text pt-2" style="padding-left: 3%;">
+        <li class="pt-2"><strong>Items must be in original condition:</strong> Unworn, unused, and unwashed.</li>
+        <li class="pt-2"><strong>Include original packaging and tags:</strong> All items should be returned with
+          their
+          original packaging and tags.</li>
+        <li class="pt-2"><strong>Proof of purchase:</strong> A receipt or proof of purchase is required.</li>
+      </ul>
+      <p class="body-text pt-3">For more detailed information, read our full <a href="returnPolicy.html">Return
+          Policy.</a></p>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
 </html>
