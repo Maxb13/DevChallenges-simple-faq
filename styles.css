@@ -23,7 +23,7 @@
 
     .container {
         display: grid;
-        grid-template-rows: 15% 30% 0.25% 30% 25%;
+        grid-template-rows: 20% 80%;
         height: 100vh;
         width: 100%;
     }
@@ -44,10 +44,12 @@
 
     .divider {
         border: 2px solid darkgray;
-        height: 10px;
-        width: 38rem;
+        /* height: 10px; */
+        /* width: 38rem; */
         background-color: darkgray;
         justify-self: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     /* text sizes */
@@ -120,10 +122,6 @@
             padding-left: 10rem;
             padding-right: 10rem;
         }
-
-        .divider {
-            width: 45rem;
-        }
     }
 
     @media screen and (min-width: 1280px) {
@@ -132,21 +130,13 @@
             padding-left: 20rem;
             padding-right: 20rem;
         }
-
-        .divider {
-            width: 40rem;
-        }
     }
 
     @media screen and (min-width: 1440px) {
 
         .padding-LR {
-            padding-left: 20rem;
-            padding-right: 20rem;
-        }
-
-        .divider {
-            width: 50rem;
+            padding-left: 30rem;
+            padding-right: 30rem;
         }
     }
 
@@ -155,10 +145,6 @@
         .padding-LR {
             padding-left: 20rem;
             padding-right: 20rem;
-        }
-
-        .divider {
-            width: 120rem;
         }
 
         .faq-body,
