@@ -5,6 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- SEO Meta Description -->
+  <meta name="description"
+    content="Find answers to frequently asked questions about order tracking, return policies, and customer support. Browse through our comprehensive FAQ section for quick solutions to common inquiries." />
+
+  <!-- Canonical URL to prevent redirect issues -->
+  <link rel="canonical" href="https://maxb13.github.io/DevChallenges-simple-faq/" />
+
+  <!-- Security and performance headers -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
   <!-- Preconnect to Google Fonts for faster loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +29,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+
+  <!-- Prevent layout shift with font fallback -->
+  <style>
+    /* Font fallback to prevent layout shift */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    /* Reserve space for headings to prevent shift */
+    .heading {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    /* Ensure container has defined dimensions */
+    .container {
+      min-height: 100vh;
+    }
+
+    /* Prevent font swap layout shift */
+    .font-loaded body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+  </style>
 
   <title>Simple FAQ | devChallenges.io</title>
 </head>
@@ -55,6 +90,21 @@
   </div>
 
   </div>
+
+  <!-- Script to handle font loading and prevent layout shift -->
+  <script>
+    // Check if Inter font is loaded and apply class
+    document.fonts.ready.then(function () {
+      document.documentElement.classList.add('font-loaded');
+    });
+
+    // Fallback for older browsers
+    if (!document.fonts) {
+      setTimeout(function () {
+        document.documentElement.classList.add('font-loaded');
+      }, 3000);
+    }
+  </script>
 
 </body>
 
