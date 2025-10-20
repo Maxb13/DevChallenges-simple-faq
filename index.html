@@ -29,9 +29,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Cache-friendly resource loading -->
-  <link rel="preload" href="./styles.css?v=1.0.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="./styles.css?v=1.0.0">
+    <link rel="stylesheet" href="./styles.css">
   </noscript>
 
   <!-- Preload Google Fonts (non-blocking) -->
@@ -114,19 +114,6 @@
       setTimeout(function () {
         document.documentElement.classList.add('font-loaded');
       }, 3000);
-    }
-
-    // Service Worker registration for better caching
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js')
-          .then(function (registration) {
-            console.log('ServiceWorker registration successful');
-          })
-          .catch(function (err) {
-            console.log('ServiceWorker registration failed');
-          });
-      });
     }
   </script>
 
