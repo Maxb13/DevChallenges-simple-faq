@@ -56,7 +56,6 @@ This is a simple FAQ page to practive HTML and CSS skills.
 ## Features
 
 - Responsive webpage design.
-- Links move to seperate pages.
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
 
