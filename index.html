@@ -5,10 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+  <!-- Preconnect to Google Fonts for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.google.com/specimen/Inter" rel="stylesheet">
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="styles.css">
+  </noscript>
+
+  <!-- Load Google Fonts with optimal performance -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
   <title>Simple FAQ | devChallenges.io</title>
 </head>
@@ -22,10 +32,10 @@
     <div class="faq-body padding-LR pt-5">
       <h1 class="subheading">How can I track my order?</h1>
       <p class="body-text pt-3">You can track your order using the following steps</p>
-      <p class="body-text pt-3">1. Go to the Order <a href="trackingPage.html">Tracking page.</a></p>
+      <p class="body-text pt-3">1. Go to the Order <a href="#">Tracking page.</a></p>
       <p class="body-text pt-2">2. Enter your order number and email address.</p>
       <p class="body-text pt-2">3. Click on the Track Order button to view the current status of your shipment.</p>
-      <p class="body-text pt-3">If you encounter any issues, please visit our <a href="helpCenter.html">Help
+      <p class="body-text pt-3">If you encounter any issues, please visit our <a href="#">Help
           Center.</a></p>
       <!-- </div> -->
       <hr class="divider">
@@ -39,7 +49,7 @@
           original packaging and tags.</li>
         <li class="pt-2"><strong>Proof of purchase:</strong> A receipt or proof of purchase is required.</li>
       </ul>
-      <p class="body-text pt-3">For more detailed information, read our full <a href="returnPolicy.html">Return
+      <p class="body-text pt-3">For more detailed information, read our full <a href="#">Return
           Policy.</a></p>
     </div>
   </div>
